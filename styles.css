@@ -14,7 +14,7 @@ body {
     padding: 10px 20px;
     border-radius: 8px;
     margin: 0 auto;
-    width: 50%;
+    width: 90%;
     max-width: 800px;
     box-sizing: border-box;
     background-color: #2a2a4a;
@@ -31,7 +31,7 @@ body {
 }
 
 .navbar + .scroll-container {
-    width: 50%;
+    width: 90%;
     max-width: 800px;
     margin: 20px auto;
 }
@@ -141,11 +141,6 @@ body {
     cursor: pointer;
 }
 
-.dropdown-toggle:hover {
-    background-color: transparent;
-    border: none;
-}
-
 .logo img {
     height: 60px;
     width: auto;
@@ -153,7 +148,7 @@ body {
 }
 
 .scroll-container {
-    width: 50%;
+    width: 90%;
     max-width: 800px;
     padding: 25px;
     box-sizing: border-box;
@@ -162,10 +157,6 @@ body {
     border-radius: 10px;
     position: relative;
     animation: fadeIn 1.5s ease-in-out;
-}
-
-.scroll-container::before {
-    content: none;
 }
 
 .intro-section {
@@ -200,8 +191,6 @@ body {
     word-wrap: break-word;
     overflow: visible;
     white-space: normal;
-    border-right: none;
-    animation: none;
 }
 
 .intro-logo {
@@ -223,7 +212,6 @@ body {
 }
 
 .content-item {
-
     background-color: #2a2a4a;
     color: #bfbfbf;
     padding: 20px;
@@ -295,11 +283,6 @@ body {
     transform: translateY(-3px);
 }
 
-.logo a:hover {
-    background-color: transparent;
-    border-radius: 0;
-}
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -311,26 +294,18 @@ body {
     }
 }
 
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
-
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
         padding: 15px;
+        width: 100%;
     }
 
     .nav-list {
         flex-direction: column;
         width: 100%;
-    }
-
-    .nav-list li {
-        margin: 10px 0;
+        gap: 10px;
     }
 
     .intro-section {
@@ -342,10 +317,6 @@ body {
     .intro-text {
         max-width: 100%;
         text-align: center;
-    }
-
-    .intro-text h1 {
-        max-width: 100%;
     }
 
     .intro-logo img {
@@ -364,56 +335,6 @@ body {
 
     body {
         padding: 0 10px;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-list {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .intro-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .intro-text h2, .intro-text h1 {
-        font-size: 1.2rem;
-    }
-
-    .intro-logo img {
-        width: 80px;
-        height: auto;
-    }
-
-    .content {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .content-item {
-        text-align: center;
-    }
-
-    .content-item i {
-        font-size: 2rem;
-    }
-
-    .content-item h3 {
-        font-size: 1.2rem;
-    }
-
-    .content-item p {
-        font-size: 1rem;
-    }
-
-    .content-item button {
-        font-size: 0.9rem;
-        padding: 8px 12px;
     }
 }
 
@@ -435,34 +356,4 @@ body {
         font-size: 12px;
         padding: 8px 12px;
     }
-}
-
-.typing {
-  font-family: monospace;
-  font-size: 2em;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 2px solid;
-  width: 0;
-  animation: typing 3s steps(20, end) forwards, blink 0.6s infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
-.highlight {
-    color: #666867;
-
 }
