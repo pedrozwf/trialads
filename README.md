@@ -15,15 +15,7 @@ Este projeto é uma interface de usuário estilizada para um site de anúncios. 
 - **CSS3**
 - **Animações com keyframes**
 - **Media Queries** para responsividade
-
-## Como Usar
-
-1. Clone este repositório:
-   ```bash
-   git clone <URL_DO_REPOSITORIO>
-   ```
-2. Abra o arquivo `index.html` em seu navegador para visualizar o site.
-
+- 
 ## Melhorias Recentes
 
 - Código CSS otimizado para melhor desempenho.
